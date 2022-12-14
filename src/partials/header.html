@@ -1,3 +1,47 @@
 <!-- Header section -->
 
-<a href=""><img src="./images/logo.svg" alt="" /></a>
+
+<header class="header">
+    <div class="header-container container">
+        <section class="header-overlay">
+            <div class="header-wrapper">
+                <a href="#" class="logo">
+                    <img class="logo-img" src="./images/header/logo.png" alt="ice cream">
+                </a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-icon" width="32" height="32">
+                        <use href="./images/header/menu-icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <h1 class="header-title">ice cream
+                made with
+                passion</h1>
+            <ul class="header-buttons list">
+                <li class="btn-item"><button class="header-btn" type="button">Products</button></li>
+                <li class="btn-item"><button class="header-btn-made" type="button">How it’s made?</button></li>
+            </ul>
+
+            <img class="hero-img" src="./images/header/mobile.jpg" alt="Animated ice cream image">
+
+        </section>
+    </div>
+
+    <nav class="site-nav">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu-icon" width="32" height="32">
+                    <use href="./images/header/menu-icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu list">
+                <li class="mobile-item"><a href="" class="mobile-link link">Home</a></li>
+                <li class="mobile-item"><a href="" class="mobile-link link">How it’s made?</a></li>
+                <li class="mobile-item"><a href="" class="mobile-link link"></a>Our products</li>
+                <li class="mobile-item"><a href="" class="mobile-link link"></a>Contact</li>
+            </ul>
+            <button class="mobile-btn" type="button">Buy now</button>
+        </div>
+    </nav>
+</header>
