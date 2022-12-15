@@ -1,3 +1,85 @@
-.footer {
-  background-color: aqua;
+.footer-page {
+  background: var(--bg-cl);
+  width: auto;
+}
+.footer-page__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-page__title--first {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--modal-bg-cl);
+  margin-bottom: 14px;
+}
+
+.footer-page__title--second {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.22;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.socials {
+  margin-bottom: 40px;
+
+  .socials__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: var(--btn-cl);
+    border-radius: 50%;
+  }
+}
+.contact-box {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  .contact-box__title {
+    color: #131313;
+  }
+
+  .contacts-box__number {
+    color: var(--btn-txt-focus-cl);
+  }
+}
+.footer-copiright__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #7a7a7a;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copiright {
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
