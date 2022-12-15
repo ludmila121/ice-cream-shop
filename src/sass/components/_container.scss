@@ -1,15 +1,15 @@
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 
   // phone screen
   @include mq(phone) {
-    width: 448px;
+    width: 480px;
   }
 
   // tablet screen
   @include mq(tablet) {
-    width: 720px;
+    width: 768px;
   }
 
   // desktop screen

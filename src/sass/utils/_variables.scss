@@ -1,31 +1,29 @@
 :root {
   /* Fonts */
-  --main-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
 
   /* Text colors */
-  --main-txt-cl: #303030;
-  --accent-txt-cl: #ff6c00;
-  --light-txt-cl: #ffffff;
-  --dark-txt-cl: #555555;
-
-  --grey-cl: rgb(157, 164, 189);
-  --grey-cl-60: rgba(157, 164, 189, 0.6);
+  --main-txt-cl: #fcfcfc;
+  --accent-txt-cl: #131313;
+  --btn-txt-cl: #000000;
+  --btn-txt-focus-cl: #ffffff;
 
   /* BG colors */
-  --dark-bg-cl: #191c26;
-  --accent-bg-cl: #ff6c00;
+
+  --bg-cl: #84a278;
+  --modal-bg-cl: #fcfcfc;
+  --input-bg-cl: rgba(248, 210, 78, 0.1);
 
   /* Others */
-  --btn-radius: 25px;
-  --indent: 30px;
-  --items: 4;
+  --btn-cl: #f8d24e;
+  --btn-hover-cl: #0a8817;
+  --btn-disabled-cl: #ababab;
+  --btn-radius: 10px;
 
-  --idx-header: 100;
-  --idx-backdrop: 1000;
+  --icon-cl: #84a178;
 
-  --trns-fast: 300ms ease-in-out;
-  --trns-slow: 500ms ease-in;
+
 }
 
 // BREAKPOINTS
