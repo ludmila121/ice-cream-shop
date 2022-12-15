@@ -1,0 +1,206 @@
+.products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    font-style: normal;
+    color: var(--accent-txt-cl);
+
+    // MOBILE
+
+    // @media screen and (max-width: 767px)  {
+    //     padding-left: 20px;
+    //     padding-right: 20px;
+    // }
+
+    // //TABLET
+
+    // @media screen and (min-width: $tablet) and (max-width: 1199px)  {
+    //     padding-left: 32px;
+    //     padding-right: 32px;
+    // }
+
+    // //DESKTOP
+
+    // @media screen and (min-width: $desktop)  {
+    //     padding-left: 16px;
+    //     padding-right: 16px;
+    // }
+
+    &__label {
+        margin-bottom: 12px;
+
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 800;
+
+        // MOBILE
+
+        @media screen and (max-width: 767px)  {
+            font-size: 18px;
+            line-height: 1.22;
+        }
+
+        // TABLET
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px)  {
+            font-size: 22px;
+            line-height: 1.23;
+        }
+
+        // DESKTOP
+
+        @media screen and (min-width: $desktop)  {
+            font-size: 30px;
+            line-height: 1.23;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    &__title {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        
+        // MOBILE
+
+        @media screen and (max-width: 767px)  {
+            font-size: 30px;
+            line-height: 1.27;
+            letter-spacing: 0.04em;
+        }
+
+        // TABLET
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px)  {
+            font-size: 34px;
+            line-height: 1.26;
+            letter-spacing: 0.04em;
+        }
+
+        // DESKTOP
+
+        @media screen and (min-width: $desktop)  {
+            font-size: 36px;
+            line-height: 1.25;
+            letter-spacing: 0.06em;
+        }
+    }
+    
+    .menu {
+        .ice-cream {
+            background-color: #AEC6A5;
+        }
+        .ice-coffee {
+            background-color: #EFD478;
+        }
+        .milkshakes {
+            background-color: #D6936D;
+        }       
+
+        // TABLET-DESKTOP
+
+        @media screen and (min-width: $tablet)  {
+            display: flex;
+        }
+
+        &__element {
+       
+        // MOBILE
+        
+        @media screen and (max-width: 767px) {
+        margin: 0 auto;
+        }
+
+        @media screen and (max-width: 479px)  {
+        width: 100%;
+        height: 420px;
+    
+        border-radius: 24px;
+        }
+
+        @media screen and (min-width: $mobile) and (max-width: 767px)  {
+        width: 280px;
+        height: 420px;
+
+        border-radius: 24px;
+        }
+        
+        // TABLET
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px)  {
+        width: 224px;
+        height: 428px;
+    
+        border-radius: 15.7808px;
+        }
+        
+        // DESKTOP
+
+        @media screen and (min-width: $desktop)  {
+        width: 370px;
+        height: 536px;
+    
+        border-radius: 24px;
+        }
+        }
+
+        &__element:not(:last-child) {
+
+        // TABLET
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px)  {
+            margin-right: 16px;
+            }
+
+        // DESKTOP
+
+        @media screen and (min-width: $desktop)  {
+            margin-right: 29px;
+            }
+        }
+
+        .element__title {
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+
+        // MOBILE
+
+        @media screen and (max-width: 767px)  {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        // TABLET
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px)  {
+            font-size: 22px;
+            line-height: 1.23;
+        }
+
+        // DESKTOP
+
+        @media screen and (min-width: $desktop)  {
+            font-size: 30px;
+            line-height: 1.23;
+        }
+        }
+        
+        .element__description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.76;
+            text-align: center;
+            letter-spacing: 0.04em;
+        
+        // DESKTOP
+
+        @media screen and (min-width: $desktop)  {
+            font-size: 16px;
+        }
+        }
+    }
+}
