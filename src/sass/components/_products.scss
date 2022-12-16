@@ -522,6 +522,10 @@
         .btn {
             position: absolute;
 
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+
         // MOBILE
 
             @media screen and (max-width: 767px)  {
@@ -539,9 +543,6 @@
             @media screen and (min-width: $desktop)  {
             bottom: 60px;
             }
-            display: flex;
-            align-items: center;
-            background-color: transparent;
         }
     }
 }
