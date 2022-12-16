@@ -1,17 +1,18 @@
 .menu-toggle {
   display: flex;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
   fill: #ffffff;
-}
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
+
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
   }
 }
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -28,11 +29,14 @@
   }
 }
 .menu-container .menu-toggle {
-  position: fixed;
-  right: 34px;
-}
-.menu-toggle {
-  margin: 17px 20px 0 auto;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
+  @include mq(tablet) {
+    top: 32px;
+    right: 32px;
+  }
 }
 
 .logo-img {
@@ -96,6 +100,7 @@
     }
   }
   &__icon {
+    fill: #000000;
     margin-left: 4px;
   }
   &:focus {
