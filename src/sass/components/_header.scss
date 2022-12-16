@@ -1,18 +1,92 @@
 .header {
   position: relative;
-  min-width: 320px;
+  max-width: 1600px;
   height: 502px;
   background-size: cover;
-  background-image: url(../images/header/hero-fill.jpg);
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
+  background-color: #84a178;
+  @media screen and (min-width: 768px) {
+    height: 415px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 664px;
   }
 
   &__logo-img {
-    margin-top: 12px;
-    margin-left: 20px;
+    width: 40px;
+    height: 37px;
+    @media screen and (min-width: $tablet) {
+      width: 48px;
+      height: 44px;
+    }
+    @media screen and(min-width: $desktop) {
+      width: 60px;
+      height: 65px;
+    }
+  }
+}
+
+.site-nav {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 20px;
+  }
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  padding: 12px 35px 12px 36px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 12);
+  border: none;
+  transition: background-color 250ms ease-in-out;
+  color: #000000;
+  background: #f8d24e;
+  border-radius: 10px;
+  &:hover {
+    color: #000000;
+    background-color: #0a8817;
+  }
+  &:focus {
+    color: #ffffff;
+    background-color: #0a8817;
+  }
+  &:disabled {
+    color: #000000;
+    border-color: #ababab;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__item {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    transition: color 250ms ease-in-out;
+
+    color: #fcfcfc;
+  }
+  &__item:not(:last-child) {
+    margin-right: 32px;
+  }
+  &__item:hover {
+    color: #f8d24e;
   }
 }
