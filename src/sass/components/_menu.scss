@@ -1,6 +1,4 @@
 .menu-toggle {
-  top: 16px;
-  right: 20px;
   display: flex;
   background-color: transparent;
   cursor: pointer;
@@ -32,10 +30,9 @@
 }
 .menu-container .menu-toggle {
   position: absolute;
-  @include mq(phone) {
-    top: 16px;
-    right: 20px;
-  }
+  top: 16px;
+  right: 20px;
+
   @include mq(tablet) {
     top: 32px;
     right: 32px;
