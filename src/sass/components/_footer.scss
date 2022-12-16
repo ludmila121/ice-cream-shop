@@ -5,12 +5,13 @@
 .footer-page__container {
   padding-top: 40px;
   padding-bottom: 40px;
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: mqtablet) {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: mqdesktop) {
     padding-top: 120px;
     padding-bottom: 60px;
   }
@@ -60,38 +61,53 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
-  }
-  @media screen and (min-width: mqtablet) {
-    font-size: 48px;
-    line-height: 1.22;
-    letter-spacing: 0.06em;
-  }
-  @media screen and (min-width: mqdesktop) {
-    font-size: 58px;
-    line-height: 1.22;
-    letter-spacing: 0.06em;
-  }
-}
-.socials {
-  margin-bottom: 40px;
 
-  .socials__list {
+    @media screen and (min-width: mqtablet) {
+      font-size: 48px;
+      line-height: 1.22;
+      letter-spacing: 0.06em;
+    }
+    @media screen and (min-width: mqdesktop) {
+      font-size: 58px;
+      line-height: 1.22;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  .footer-contacts {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-  }
-  .socials__item:not(:last-child) {
-    gap: 30px;
+    justify-content: space-between;
   }
 
+  .socials {
+    margin-bottom: 40px;
+    display: flex;
+
+    .socials__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .socials__item:not(:last-child) {
+      gap: 30px;
+    }
+    .socials-icon {
+      gap: 30px;
+    }
+  }
   .socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     background-color: var(--btn-cl);
     border-radius: 50%;
+  }
+  @media screen and (min-width: mqtablet) {
+    width: 34px;
+    height: 34px;
   }
 }
 .contact-box {
@@ -103,6 +119,11 @@
   letter-spacing: 0.02em;
 
   .contact-box__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
     color: #131313;
   }
 
