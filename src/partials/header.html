@@ -1,18 +1,32 @@
-<!-- Header section -->
-
-
 <header class="header">
     <div class="header__container container">
-        <div class="header__wrapper">
+        <nav class="site-nav">
             <a href="#" class="logo">
                 <img class="header__logo-img" src="./images/header/logo.png" alt="ice cream">
             </a>
+
+            <ul class="nav-menu list">
+                <li class="nav-menu__item"><a href="#home" class="nav-menu__link link">Home</a></li>
+                <li class="nav-menu__item"><a href="#how it's made?"
+                        class="nav-menu__link nav-menu__link--current link">How
+                        it’s made?</a></li>
+                <li class="nav-menu__item"><a href="#our products" class="nav-menu__link link">Our products</a>
+                </li>
+                <li class="nav-menu__item"><a href="#contact" class="nav-menu__link link">Contact</a></li>
+            </ul>
+
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-icon" width="32" height="32">
-                    <use href="./images/header/menu-icons.svg#icon-menu"></use>
+                    <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
-        </div>
+            <button class="header__btn" type="button">Buy now
+                <svg class="mobile-menu__icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                </svg></button>
+        </nav>
+
+
 
         <h1 class="hero__title">ice cream
             made with
@@ -21,33 +35,11 @@
             <li class="btn-item"><button class="hero__btn" type="button">Products</button></li>
             <li class="btn-item"><button class="hero__btn-made" type="button">How it’s made?</button></li>
         </ul>
+        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt
+            ut labore et</p>
         <img src="./images/header/dots.png" alt="Dots" class="hero__dots-img">
-        <img class="hero__img" src="./images/header/mobile.png" alt="Animated ice cream image">
+
+        <img class="hero__img" src="./images/hero/hero1-mob@1x.png" alt="Animated ice cream image">
     </div>
-
-    <nav class="site-nav">
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-                <svg class="menu-icon" width="32" height="32">
-                    <use href="./images/header/menu-icons.svg#icon-cross"></use>
-                </svg>
-            </button>
-            <a href="#" class="logo">
-                <img class="logo-img" src="./images/header/logo.png" alt="ice cream">
-            </a>
-
-
-            <ul class="mobile-menu list">
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Home</a></li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--current link">How
-                        it’s made?</a></li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link"></a>Our products</li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link"></a>Contact</li>
-            </ul>
-            <button class="mobile-menu__btn" type="button">Buy now
-                <svg class="mobile-menu__icon" width="12" height="12">
-                    <use href="./images/header/menu-icons.svg#icon-arrow"></use>
-                </svg></button>
-        </div>
-    </nav>
 </header>
