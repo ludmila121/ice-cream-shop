@@ -15,10 +15,10 @@
     align-items: baseline;
   }
 }
+
 .footer-page__title {
-  @include mq(phone) {
-    width: 234px;
-  }
+  margin-bottom: 60px;
+  width: 234px;
 
   @include mq(tablet) {
     margin-bottom: 32px;
@@ -78,25 +78,26 @@
 
 .footer-contacts {
   display: flex;
-  justify-content: flex-end;
-  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .socials {
-  margin-bottom: 40px;
+  gap: 20px;
+  display: flex;
 
   .socials__list {
     display: flex;
     justify-content: flex-end;
-  }
-  .socials-icon {
+    margin-bottom: 20px;
     gap: 20px;
+  }
 
-    @include mq(tablet) {
-      gap: 30px;
-    }
+  @include mq(tablet) {
+    gap: 30px;
   }
 }
+
 .socials__link {
   display: flex;
   align-items: center;
@@ -114,33 +115,29 @@
   }
 }
 
-.contact-box {
-  margin-bottom: 40px;
+.contact-box__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #131313;
   justify-content: center;
   text-align: center;
   display: flex;
+}
 
-  .contact-box__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    font-size: 16px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: #131313;
-  }
-
-  .contacts-box__number {
-    color: var(--btn-txt-focus-cl);
-  }
+.contacts-box__number {
+  color: var(--btn-txt-focus-cl);
+  display: block;
 }
 
 .footer-copiright {
   @include mq(desktop) {
     border-top: 1px solid #e1e1e1;
-    margin: auto;
-    width: 100%;
+    font-weight: 700;
   }
 }
 .footer-copiright__text {
@@ -151,10 +148,12 @@
   color: #7a7a7a;
   width: 150px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 
   @include mq(tablet) {
     padding-top: 12px;
-    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 14px;
     letter-spacing: 0.02em;
     width: 298px;
