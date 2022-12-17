@@ -1,5 +1,6 @@
 .footer-page {
   background: var(--bg-cl);
+  padding-bottom: 20px;
 }
 .footer-page__container {
   padding-top: 40px;
@@ -24,17 +25,17 @@
   }
   @media screen and (min-width: mqdesktop) {
     margin-bottom: 60px;
-    width: 504px;
+    width: 510px;
   }
   .footer-page__title--first {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     line-height: calc(22 / 18);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--modal-bg-cl);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 
     @media screen and (min-width: mqtablet) {
       margin-bottom: 8px;
@@ -101,6 +102,12 @@
     height: 32px;
     background-color: var(--btn-cl);
     border-radius: 50%;
+    fill: #84a178;
+
+    .socials__link:hover,
+    .socials__link:focus {
+      fill: currentColor;
+    }
   }
   @media screen and (min-width: mqtablet) {
     width: 34px;
@@ -127,22 +134,19 @@
     color: var(--btn-txt-focus-cl);
   }
 }
-.footer-copiright__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.86;
-  color: #7a7a7a;
-
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
 
 .footer-copiright {
   border-top: 1px solid #e1e1e1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
+
+  .footer-copiright__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #7a7a7a;
+    width: 150px;
+    text-align: center;
+  }
 }
