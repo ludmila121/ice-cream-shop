@@ -1,5 +1,13 @@
-// ------- ANIMATION SLIDER
+// GALLERY GENERAL STYLES
 
+.gallery {
+  @include section(50px, 40px);
+}
+
+// ------- ANIMATION SLIDER
+// .gallery-container {
+//   position: relative;
+// }
 #cf {
   position: relative;
   height: 281px;
@@ -55,14 +63,19 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  // background-color: var(--slider-cl);
+  color: var(--slider-sec-cl);
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 9px;
   margin-right: 9px;
 }
-
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+}
 // slider info
 
 .reviewer-photo {
@@ -73,17 +86,47 @@
 .review {
   text-align: center;
   margin-bottom: 32px;
+  @include section(35px, 35px);
 
-  padding-top: 35px;
-  padding-bottom: 35px;
   padding-left: 39px;
   padding-right: 39px;
 
   background-color: var(--slider-cl);
   border-radius: 10px;
+
+  @include fonts(12px, 31px, 400, 0.02em);
+
+  @media screen and (min-width: $tablet) {
+    @include section(28px, 28px);
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    border-radius: 24px;
+
+    @include fonts(14px, 26px, 500, 0.04em);
+  }
+  @media screen and (min-width: $desktop) {
+    @include section(43px, 43px);
+
+    padding-left: 109px;
+    padding-right: 109px;
+
+    @include fonts(16px, 30px, 500, 0.04em);
+  }
 }
+
 .reviewer {
   color: var(--accent-txt-cl);
   text-align: center;
   margin-bottom: 32px;
+  @include fonts(20px, 37px, 500, 0.02em);
+
+  @media screen and (min-width: $tablet) {
+    @include fonts(16px, 30px, 500, 0.02em);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include fonts(16px, 30px, 500, 0.02em);
+  }
 }

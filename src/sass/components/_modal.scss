@@ -24,7 +24,8 @@
 
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 500px;
+  // було 500px
+  max-width: 568px;
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -53,11 +54,11 @@
 /* Стили для кнопки закрытия */
 
 .modal__cross {
-  width: 15px;
-  height: 15px;
+  width: 24px;
+  height: 24px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 12px;
   fill: #444;
   cursor: pointer;
 }
@@ -72,6 +73,7 @@ a.js-open-modal {
   color: #fff;
   border-radius: 3px;
 }
+
 .backdrop {
   @media screen and (max-width: 479px) {
     padding: 20px;
@@ -235,3 +237,74 @@ a.js-open-modal {
   border-radius: 10px;
   border: none;
 }
+// MAIIA / Modal 4
+
+// в загальний клас добавити вище
+.modal {
+  background-color: var(--modal-bg-cl);
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.modal-location {
+  @include section(28px, 28px);
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @media screen and (min-width: $desktop) {
+    @include section(32px, 32px);
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+.modal-location-title {
+  font-family: var(--secondary-font);
+  @include fonts(16px, 24px, 400, 0.02em);
+
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-txt-cl);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+.modal-map {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+    // height: 260px;
+  }
+}
+.modal-link {
+  width: 136px;
+  @include fonts(12px, 15px, 600, 0.02em);
+
+  display: block;
+  align-items: center;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include section(12px, 12px);
+  padding-left: 34px;
+  padding-right: 34px;
+
+  color: var(--accent-txt-cl);
+  background-color: var(--btn-cl);
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    width: 148px;
+    @include fonts(14px, 17px, 600, 0.02em);
+  }
+}
+// Modal 4 end
