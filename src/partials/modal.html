@@ -4,7 +4,7 @@
   <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
   <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
   <a href="#" class="js-open-modal" data-modal="3">Открыть окно 2</a>
-  <a href="#" class="js-open-modal" data-modal="4">Открыть окно 2</a>
+  <!-- <a href="#" class="js-open-modal" data-modal="4">Открыть окно 2</a> -->
   <a href="#" class="js-open-modal" data-modal="5">Открыть окно 2</a>
 
   <!-- Несколько модальных окон -->
@@ -39,15 +39,39 @@
     <p class="modal__title">Modal 3</p>
   </div>
 
-  <div class="modal" data-modal="4">
+  <!-- OUR LOCATIONS (MAP) MODAL -->
+
+  <div class="modal-location modal" data-modal="4">
     <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path
         d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
       />
+    </svg> -->
+
+    <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
+      <path
+        d="M17.253 16l7.369-7.369c0.131-0.154 0.21-0.355 0.21-0.574 0-0.491-0.398-0.889-0.889-0.889-0.22 0-0.42 0.080-0.576 0.211l0.001-0.001-7.369 7.369-7.369-7.377c-0.164-0.18-0.399-0.292-0.661-0.292-0.493 0-0.893 0.4-0.893 0.893 0 0.261 0.112 0.496 0.291 0.659l0.001 0.001 7.379 7.369-7.379 7.369c-0.193 0.164-0.315 0.407-0.315 0.679 0 0.491 0.398 0.889 0.889 0.889 0.272 0 0.515-0.122 0.678-0.314l0.001-0.001 7.379-7.369 7.368 7.369c0.154 0.131 0.355 0.21 0.574 0.21 0.491 0 0.889-0.398 0.889-0.889 0-0.22-0.080-0.42-0.211-0.576l0.001 0.001-7.368-7.369z"
+      ></path>
     </svg>
-    <p class="modal__title">Modal 4</p>
+    <h2 class="modal-location-title">Our Locations</h2>
+
+    <iframe
+      class="modal-map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.793119616134!2d-87.78192918456439!3d41.703401579236406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e39ad302b2c19%3A0xc808e9b14d04eb2b!2zMTAzNDAgUmlkZ2VsYW5kIEF2ZSwgQ2hpY2FnbyBSaWRnZSwgSUwgNjA0MTUsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1671293920612!5m2!1suk!2sua"
+      width="244"
+      height="199"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+
+    <a class="modal-link link" href="https://goo.gl/maps/tnrnvPAMrcTUtLnd8">Open map</a>
   </div>
+  <!-- OUR LOCATIONS (MAP) MODAL END-->
+
   <div class="modal" data-modal="5">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
