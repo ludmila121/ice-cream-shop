@@ -1,1 +1,104 @@
 <!-- Gallery section -->
+<section class="gallery">
+  <div class="container">
+    <!-- Gallery -->
+    <div id="cf">
+      <img
+        srcset="
+          ./images/reviews/gal1-mob@1x.jpg   280w,
+          ./images/reviews/gal1-mob@2x.jpg   560w,
+          ./images/reviews/gal1-tab@1x.jpg   704w,
+          ./images/reviews/gal1-tab@2x.jpg  1408w,
+          ./images/reviews/gal1-desk@1x.jpg 1013w,
+          ./images/reviews/gal1-desk@2x.jpg 2026w
+        "
+        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px,(min-width: 480px) 704px, (min-width: 320px) 280px, 100wv"
+        src="./images/reviews/gal1-mob@1x.jpg"
+        alt="Ice cream cone on the table and berries"
+        width="280"
+        height="130"
+      />
+      <!-- ./images/reviews/gal2-mob@1x.jpg 280w, ./images/reviews/gal2-mob@2x.jpg 560w,
+    ./images/reviews/gal2-tab@1x.jpg 704w, ./images/reviews/gal2-tab@2x.jpg 1408w, -->
+      <img
+        srcset="./images/reviews/gal2-desk@1x.jpg 1013w, ./images/reviews/gal2-desk@2x.jpg 2026w"
+        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px,(min-width: 480px) 704px, (min-width: 320px) 280px, 100wv"
+        src="./images/reviews/gal2-desk@1x.jpg"
+        alt="Ice cream cone on the table and berries"
+        width="280"
+        height="130"
+      />
+      <!-- ./images/reviews/gal3-mob@1x.jpg 280w, ./images/reviews/gal3-mob@2x.jpg 560w,
+    ./images/reviews/gal3-tab@1x.jpg 704w, ./images/reviews/gal3-tab@2x.jpg 1408w, -->
+      <img
+        srcset="./images/reviews/gal3-desk@1x.jpg 1013w, ./images/reviews/gal3-desk@2x.jpg 2026w"
+        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px,(min-width: 480px) 704px, (min-width: 320px) 280px, 100wv"
+        src="./images/reviews/gal3-desk@1x.jpg"
+        alt="Ice cream cone on the table and berries"
+        width="280"
+        height="130"
+      />
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            class="reviewer-photo"
+            src="./images/reviews/rev1-desk@1x.png"
+            alt="Emily, Los Angeles"
+            width="85"
+            height="85"
+          />
+          <p class="review">
+            I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+            addition, you have beautiful serving, cozy atmosphere and polite staff.
+          </p>
+          <p class="reviewer">Emily, Los Angeles</p>
+          <!-- Slide 1 -->
+        </div>
+        <div class="swiper-slide">
+          <!-- Slide 2 -->
+          <img
+            class="reviewer-photo"
+            src="./images/reviews/rev2-desk@1x.png"
+            alt="Bryan, New-York"
+            width="85"
+            height="85"
+          />
+          <p class="review">
+            Every day we come to you with friends after classes in college. We love your ice cream
+            and casual atmosphere!
+          </p>
+          <p class="reviewer">Bryan, New-York</p>
+        </div>
+        <div class="swiper-slide">
+          <!-- Slide 3 -->
+          <img
+            class="reviewer-photo"
+            src="./images/reviews/rev3-desk@1x.png"
+            alt="Diana, Chicago"
+            width="85"
+            height="85"
+          />
+          <p class="review">
+            Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the
+            excellent service - always served politely and quickly!
+          </p>
+          <p class="reviewer">Diana, Chicago</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </div>
+</section>
