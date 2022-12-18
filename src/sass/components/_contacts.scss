@@ -1,36 +1,48 @@
 .contacts {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 24%, var(--icon-cl) 24% 100%);
   @media screem and(min-width:$mobile) {
     display: block;
   }
 
   &_container {
-    background-color: var(--icon-cl);
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
     }
   }
   &_office {
     background-color: var(--main-txt-cl);
     border-radius: 24px;
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
       width: 280px;
       margin-right: auto;
       margin-left: auto;
+      margin-bottom: 16px;
+      padding-top: 40px;
+      padding-left: 32px;
+      padding-bottom: 24px;
+      padding-right: 58px;
     }
     @media screen and (min-width: $tablet) {
       width: 224px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 24px;
+      padding-right: 27px;
+    }
+    @media screen and(min-width:$desktop) {
+      width: 368px;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-bottom: 40px;
+      padding-right: 66px;
     }
   }
-
   &_list {
-    padding-top: 40px;
-    padding-left: 0px;
     list-style: none;
     @media screen and (min-width: $mobile) {
-      padding-bottom: 24px;
-      padding-right: 32px;
-      margin-bottom: 16px;
     }
     @media screen and (min-width: $tablet) {
       padding-right: 24px;
@@ -38,6 +50,7 @@
   }
 
   &_category {
+    display: inline;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.16;
@@ -48,9 +61,6 @@
     color: var(--accent-txt-cl);
     background-color: var(--btn-cl);
     border-radius: 4px;
-    margin-left: 35px;
-    margin-bottom: 24px;
-    margin-right: 58px;
   }
   &_city {
     color: var(--accent-txt-cl);
@@ -60,6 +70,7 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
     margin-bottom: 8px;
+    margin-top: 20px;
   }
   &_full-address {
     position: relative;
@@ -77,10 +88,15 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 216px;
     height: 1px;
     background-color: var(--border-cl);
     border-radius: 2px;
+    @media screen and (max-width: 767px) {
+      width: 216px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 176px;
+    }
   }
 
   &_work-week {
@@ -109,10 +125,15 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 216px;
     height: 1px;
     background-color: var(--border-cl);
     border-radius: 2px;
+    @media screen and (max-width: 767px) {
+      width: 216px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 176px;
+    }
   }
 
   &_day {
@@ -126,22 +147,36 @@
   }
 
   &_knob {
-    width: 196px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-top: 20px;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: end;
+    }
   }
   .js-open-modal {
+    margin-left: auto;
+    margin-right: auto;
+    width: 196px;
     background-color: var(--btn-cl);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 16px;
+    }
   }
   &_button {
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
     background-color: var(--icon-cl);
     width: 196px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 8px;
     border: 1px solid var(--btn-cl);
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   &_contacts {
