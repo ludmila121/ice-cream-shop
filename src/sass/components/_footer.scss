@@ -111,12 +111,13 @@
   height: 32px;
   background-color: var(--btn-cl);
   border-radius: 50%;
-  fill: #84a178;
 }
 .socials__link:hover,
 .socials__link:focus {
-  color: #fcfcfc;
-  // color: var(--main-txt-cl);
+  fill: #fcfcfc;
+}
+.socials__icon {
+  fill: currentColor;
 }
 
 .contact-box {
