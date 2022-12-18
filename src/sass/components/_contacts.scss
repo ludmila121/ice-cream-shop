@@ -3,13 +3,22 @@
   @media screem and(min-width:$mobile) {
     display: block;
   }
-
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 55%,
+      var(--icon-cl) 55% 100%
+    );
+  }
   &_container {
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 32px;
     }
   }
   &_office {
@@ -19,7 +28,6 @@
       width: 280px;
       margin-right: auto;
       margin-left: auto;
-      margin-bottom: 16px;
       padding-top: 40px;
       padding-left: 32px;
       padding-bottom: 24px;
@@ -37,7 +45,12 @@
       padding-top: 40px;
       padding-left: 40px;
       padding-bottom: 40px;
-      padding-right: 66px;
+      padding-right: 40px;
+    }
+  }
+  &_office:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
     }
   }
   &_list {
@@ -45,43 +58,72 @@
     @media screen and (min-width: $mobile) {
     }
     @media screen and (min-width: $tablet) {
-      padding-right: 24px;
     }
   }
 
   &_category {
     display: inline;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 4px 22px;
 
     color: var(--accent-txt-cl);
     background-color: var(--btn-cl);
     border-radius: 4px;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.16;
+      letter-spacing: 0.04em;
+      padding: 4px 22px;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.37px;
+      padding: 4px 14px;
+    }
   }
   &_city {
     color: var(--accent-txt-cl);
     list-style: none;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
     letter-spacing: 0.04em;
     margin-bottom: 8px;
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.83;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.87;
+    }
   }
   &_full-address {
     position: relative;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
     letter-spacing: 0.04em;
     color: var(--bg-cl-3);
     list-style: none;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.83;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.85;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.81;
+    }
   }
   &_full-address::after {
     content: '';
@@ -97,30 +139,38 @@
     @media screen and (min-width: $tablet) {
       width: 176px;
     }
+    @media screen and (min-width: $desktop) {
+      width: 288px;
+    }
   }
 
   &_work-week {
     list-style: none;
     padding-left: 0;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
     letter-spacing: 0.04em;
     margin-bottom: 8px;
-  }
-  &_weekend {
     position: relative;
-    list-style: none;
-    padding-left: 0;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    letter-spacing: 0.04em;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.83;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.85;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.87;
+    }
   }
 
-  &_weekend::after {
+  &_work-week::after {
     content: '';
     position: absolute;
     left: 0;
@@ -133,6 +183,9 @@
     }
     @media screen and (min-width: $tablet) {
       width: 176px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 288px;
     }
   }
 
@@ -167,6 +220,18 @@
       margin-right: 16px;
     }
   }
+  .js-open-modal:hover {
+    background-color: var(--btn-hover-cl);
+    color: var(--btn-txt-cl);
+  }
+  .js-open-modal:focus {
+    background-color: var(--btn-hover-cl);
+    color: var(--btn-txt-focus-cl);
+  }
+  .js-open-modal:disabled {
+    background-color: var(--btn-disabled-cl);
+    color: var(--btn-txt-cl);
+  }
   &_button {
     margin-left: auto;
     margin-right: auto;
@@ -178,16 +243,37 @@
     padding-top: 12px;
     padding-bottom: 12px;
   }
-
+  &_button:hover {
+    border-color: var(--btn-hover-cl);
+  }
+  &_button:focus {
+    border-color: var(--btn-hover-cl);
+    color: var(--btn-txt-focus-cl);
+  }
+  &_button:disabled {
+    border-color: var(--btn-disabled-cl);
+  }
   &_contacts {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.58;
     color: var(--accent-txt-cl);
     list-style: none;
     margin-bottom: 6px;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.58;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
   &_tel {
     list-style: none;
+  }
+  &_link-icon {
+    fill: currentColor;
   }
 }
