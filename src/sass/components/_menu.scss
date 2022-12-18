@@ -78,9 +78,9 @@
     }
   }
 
-  &__link--current {
+  &__link:hover {
     transition: color 250ms ease-in-out;
-    color: #131313;
+    color: var(--accent-txt-cl);
   }
 
   &__btn {

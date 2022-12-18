@@ -1,9 +1,10 @@
 .header {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
   width: 100%;
-  background-size: cover;
-  background-color: var(--bg-cl);
-
+  // background-color: var(--bg-cl);
   &__logo-img {
     width: 40px;
     height: 37px;
@@ -17,19 +18,16 @@
     }
   }
 }
-
 .site-nav {
   padding-top: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
-
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
   }
 }
-
 .header__btn {
   display: flex;
   align-items: center;
@@ -60,20 +58,17 @@
     display: none;
   }
 }
-
 .nav-menu {
   display: flex;
   @media screen and (max-width: 1199px) {
     display: none;
   }
-
   &__item {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
     transition: color 250ms ease-in-out;
-
     color: #fcfcfc;
   }
   &__item:not(:last-child) {
