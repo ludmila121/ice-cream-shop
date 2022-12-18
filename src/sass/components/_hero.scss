@@ -1,27 +1,23 @@
 .hero {
-  position: relative;
-  top: 99px;
-  width: 320px;
-  height: 502px;
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-    height: 415px;
-    top: 80px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 100%;
-    height: 664px;
-    top: 118px;
-  }
   background-color: var(--bg-cl);
+}
+.hero__container {
+  position: relative;
+  padding-top: 99px;
+  max-width: 100%;
+  height: 502px;
   background-image: url(../images/hero/dots-mob.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
   @include mq(tablet) {
+    height: 415px;
+    padding-top: 80px;
     background-image: url(../images/hero/dots-tab.svg);
   }
   @include mq(desktop) {
+    height: 664px;
+    padding-top: 118px;
     background-image: url(../images/hero/dots-desk.svg);
   }
 }
@@ -34,7 +30,6 @@
   line-height: calc(33 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #fcfcfc;
   @include mq(tablet) {
     margin-bottom: 24px;
@@ -46,12 +41,11 @@
     line-height: calc(48 / 38);
   }
 }
-
 .hero__buttons {
   display: flex;
   align-items: center;
+  margin-bottom: 39px;
 }
-
 .hero__btn {
   width: 108px;
   height: 38px;
@@ -67,7 +61,6 @@
   border-radius: 8px;
   background-color: #84a178;
   transition: border-color 250ms ease-in-out;
-
   color: #000000;
   &:hover {
     border-color: #0a8817;
@@ -79,7 +72,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .hero__btn-made {
   margin-left: 12px;
   font-family: 'Montserrat';
@@ -108,40 +100,55 @@
     line-height: calc(17 / 12);
   }
 }
-
-.hero__img {
-  position: relative;
-  top: 116px;
-  left: 61px;
+.hero__details {
+  width: 139px;
+  margin-left: 216px;
+}
+.hero1 {
+  position: absolute;
+  bottom: 0;
+  left: 26%;
   background-color: transparent;
-
+  width: 177px;
   @include mq(tablet) {
-    top: -131px;
-    left: 387px;
+    width: 268px;
+    left: 53%;
   }
-
   @include mq(desktop) {
-    top: -137px;
+    bottom: 0;
     left: 652px;
   }
 }
-
+.hero2 {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  @include mq(tablet) {
+    display: block;
+    width: 152px;
+    left: 32px;
+    bottom: 12px;
+  }
+  @include mq(desktop) {
+    bottom: 65px;
+    left: 16px;
+  }
+}
 .hero__details {
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
-
 .hero__content {
-  position: relative;
-  bottom: 541px;
+  position: absolute;
+  top: 94px;
+  right: 32px;
   display: flex;
   justify-content: flex-end;
   @include mq(desktop) {
     bottom: 795px;
   }
 }
-
 .hero__txt {
   font-family: var(--main-font);
   font-weight: 900;
@@ -151,7 +158,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 4px;
-
   color: var(--accent-txt-cl);
   @include mq(desktop) {
     font-weight: 900;
@@ -160,10 +166,8 @@
     letter-spacing: 0.04em;
   }
 }
-
 .hero__txt-caffe {
   font-family: var(--main-font);
-
   font-weight: 400;
   font-size: 8px;
   line-height: calc(8 / 10);
@@ -173,13 +177,11 @@
   @include mq(desktop) {
     font-size: 14px;
     line-height: calc(14 / 17);
-
     &:not(:last-child) {
       margin-bottom: 16px;
     }
   }
 }
-
 .hero__amount {
   display: none;
   @include mq(tablet) {
