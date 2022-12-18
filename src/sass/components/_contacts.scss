@@ -23,6 +23,7 @@
   }
   &_office {
     background-color: var(--main-txt-cl);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     @media screen and (max-width: 767px) {
       width: 280px;
