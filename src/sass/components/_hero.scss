@@ -115,6 +115,7 @@
     left: 53%;
   }
   @include mq(desktop) {
+    width: 456px;
     bottom: 0;
     left: 652px;
   }
@@ -130,6 +131,7 @@
     bottom: 12px;
   }
   @include mq(desktop) {
+    width: 225px;
     bottom: 65px;
     left: 16px;
   }
