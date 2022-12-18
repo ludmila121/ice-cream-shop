@@ -1,7 +1,7 @@
 .footer-page {
   background: var(--bg-cl);
-  padding-bottom: 20px;
 }
+
 .footer-page__container {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -44,6 +44,8 @@
     font-size: 26px;
     line-height: calc(32 / 26);
     letter-spacing: 0.04em;
+    justify-content: space-between;
+    display: flex;
   }
 
   @include mq(desktop) {
@@ -107,14 +109,15 @@
   background-color: var(--btn-cl);
   border-radius: 50%;
   fill: #84a178;
-
-  .socials__link:hover,
-  .socials__link:focus {
-    fill: currentColor;
-    color: var(--main-txt-cl);
-  }
 }
-
+.socials__icon:hover,
+.socials__icon:focus {
+  fill: currentColor;
+  color: var(--main-txt-cl);
+}
+.contact-box {
+  display: flex;
+}
 .contact-box__title {
   font-style: normal;
   font-weight: 700;
