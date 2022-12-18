@@ -28,7 +28,7 @@ img {
 
 button {
   display: block;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), auto;
   border: none;
   border-radius: 10px;
 }
