@@ -30,6 +30,7 @@
     @media screen and (min-width: $mobile) {
       padding-bottom: 24px;
       padding-right: 32px;
+      margin-bottom: 16px;
     }
     @media screen and (min-width: $tablet) {
       padding-right: 24px;
@@ -42,7 +43,7 @@
     line-height: 1.16;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 4px 0px;
+    padding: 4px 22px;
 
     color: var(--accent-txt-cl);
     background-color: var(--btn-cl);
