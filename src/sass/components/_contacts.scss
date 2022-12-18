@@ -1,5 +1,5 @@
 .contacts {
-  background-color: var(--icon-cl);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 24%, var(--icon-cl) 24% 100%);
   @media screem and(min-width:$mobile) {
     display: block;
   }
