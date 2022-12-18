@@ -1,5 +1,5 @@
 .about {
-  @include section(60px, 50px);
+  @include section(60px, 60px);
   background-color: var(--bg-cl);
 }
 
@@ -9,6 +9,10 @@
   @include fonts(18px, 22px, 700);
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    @include fonts(22px, 27px, 800, 0.04em);
+  }
 
   @media screen and (min-width: $desktop) {
     @include fonts(30px, 37px, 800, 0.04em);
@@ -22,22 +26,57 @@
   font-family: var(--secondary-font);
   text-transform: uppercase;
   text-align: center;
-  width: 200px;
+  width: 210px;
+
+  @media screen and (min-width: $tablet) {
+    @include fonts(34px, 43px, 400, 0.06em);
+    width: 456px;
+    margin: 0 auto 98px;
+  }
 
   @media screen and (min-width: $desktop) {
-    @include fonts(30px, 37px, 800, 0.04em);
+    @include fonts(36px, 45px, 400, 0.06em);
+    width: 483px;
+    margin: 0 auto 84px;
+  }
+}
+
+.about__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
   }
 }
 
 .about__img {
   border-radius: 50%;
-  max-width: 279px;
-  margin: 0 auto 40px;
   box-shadow: 0 -22px rgba(248, 210, 78, 0.7);
+
+  @media screen and (max-width: 767px) {
+    max-width: 279px;
+    margin: 0 auto 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include fonts(30px, 37px, 800, 0.04em);
+    max-width: 330px;
+    margin-right: 38px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include fonts(30px, 37px, 800, 0.04em);
+    max-width: 491px;
+    margin-right: 109px;
+  }
 }
 
 .about__text-container {
-  text-align: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
 }
 
 .about__text {
@@ -46,22 +85,28 @@
   text-align: center;
   margin: 0 auto 4px;
 
-  @media screen and (max-width: 676px) {
+  @media screen and (max-width: 767px) {
     &:nth-child(2) {
       margin-bottom: 0;
+    }
+    &--mobile {
+      display: none;
     }
   }
 
   @media screen and (min-width: $tablet) {
+    margin: 0 0 8px;
+    max-width: 336px;
+    text-align: left;
+
     &:nth-child(3) {
       margin-bottom: 0;
     }
   }
-}
 
-.about__text--mobile {
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: $desktop) {
+    @include fonts(16px, 28px, 400, 0.04em);
+    max-width: 463px;
   }
 }
 
@@ -71,7 +116,7 @@
   align-items: center;
   gap: 4px;
 
-  min-width: 164px;
+  width: 164px;
   padding: 12px 0;
   margin: 10px auto 0;
 
@@ -81,4 +126,13 @@
   border-radius: 10px;
 
   cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    margin: 32px 0 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: left;
+    margin: 54px 0 0;
+  }
 }
