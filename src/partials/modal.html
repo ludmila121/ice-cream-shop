@@ -8,8 +8,48 @@
   <a href="#" class="js-open-modal" data-modal="5">Открыть окно 2</a>
 
   <!-- Несколько модальных окон -->
+
+  <!-- PRODUCT MODAL -->
+
+  <div class="product-modal modal" data-modal="1">
+    <button type="button" class="button-modal" data-modal-close>
+      <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
+        <path
+          d="M17.253 16l7.369-7.369c0.131-0.154 0.21-0.355 0.21-0.574 0-0.491-0.398-0.889-0.889-0.889-0.22 0-0.42 0.080-0.576 0.211l0.001-0.001-7.369 7.369-7.369-7.377c-0.164-0.18-0.399-0.292-0.661-0.292-0.493 0-0.893 0.4-0.893 0.893 0 0.261 0.112 0.496 0.291 0.659l0.001 0.001 7.379 7.369-7.379 7.369c-0.193 0.164-0.315 0.407-0.315 0.679 0 0.491 0.398 0.889 0.889 0.889 0.272 0 0.515-0.122 0.678-0.314l0.001-0.001 7.379-7.369 7.368 7.369c0.154 0.131 0.355 0.21 0.574 0.21 0.491 0 0.889-0.398 0.889-0.889 0-0.22-0.080-0.42-0.211-0.576l0.001 0.001-7.368-7.369z"
+        ></path>
+      </svg>
+    </button>
+    <div>
+      <h2 class="product-modal__title">Buy now</h2>
+      <ul class="list product-list">
+        <li class="products__item products__ice-cream">
+          <h3 class="products__title">ice cream</h3>
+        </li>
+        <li class="products__item products__ice-coffe">
+          <h3 class="products__title">ice coffee</h3>
+        </li>
+        <li class="products__item products__milkshake">
+          <h3 class="products__title">milkshake</h3>
+        </li>
+      </ul>
+      <form>
+        <ul class="list franchise-list">
+          <li>
+            <input class="franchise-list__input" type="text" placeholder="Name" />
+          </li>
+          <li>
+            <input class="franchise-list__input" type="tel" placeholder="Phone" />
+          </li>
+        </ul>
+
+        <textarea class="product-list__comment" placeholder="Comment"></textarea>
+        <button class="franchise__btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
   <!-- Franchies Modal -->
-  <div class="modal" data-modal="1">
+  <div class="modal" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path
@@ -49,48 +89,6 @@
         </form>
       </div>
     </div>
-  </div>
-
-  <!-- PRODUCT MODAL -->
-  <div class="product-modal">
-    <button type="button" class="button-modal" data-modal-close></button>
-    <div>
-      <h2 class="product-modal__title">Buy now</h2>
-      <ul class="list product-list">
-        <li class="products__item products__ice-cream">
-          <h3 class="products__title">ice cream</h3>
-        </li>
-        <li class="products__item products__ice-coffe">
-          <h3 class="products__title">ice coffee</h3>
-        </li>
-        <li class="products__item products__milkshake">
-          <h3 class="products__title">milkshake</h3>
-        </li>
-      </ul>
-      <form>
-        <ul class="list franchise-list">
-          <li>
-            <input class="franchise-list__input" type="text" placeholder="Name" />
-          </li>
-          <li>
-            <input class="franchise-list__input" type="tel" placeholder="Phone" />
-          </li>
-        </ul>
-
-        <textarea class="product-list__comment" placeholder="Comment"></textarea>
-        <button class="franchise__btn" type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="modal" data-modal="2">
-    <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-      />
-    </svg>
-    <p class="modal__title">Modal 2</p>
   </div>
 
   <div class="modal" data-modal="3">
