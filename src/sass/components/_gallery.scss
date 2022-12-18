@@ -3,21 +3,22 @@
 .gallery {
   @include section(178px, 40px);
 
-  // @media screen and (min-width: $tablet) {
-  //   @include section(283px, 40px);
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   @include section(464px, 40px);
-  // }
+  @media screen and (min-width: $tablet) {
+    @include section(283px, 40px);
+  }
+  @media screen and (min-width: $desktop) {
+    @include section(464px, 40px);
+  }
+  cursor: url(../images/cursor.png), auto;
 }
 
 // ------- ANIMATION SLIDER
 
-.cf {
-  border-radius: 10px;
-  // box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-  //   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
+// .cf {
+//   border-radius: 10px;
+// box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+//   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+// }
 
 /* Adds animation when hovering. */
 // .cf {
@@ -48,18 +49,20 @@
   position: absolute;
   bottom: 80px;
   left: 0;
-  // border-radius: 8px;
+  border-radius: 8px;
   // -webkit-transition: opacity 1s ease-in-out;
   // -moz-transition: opacity 1s ease-in-out;
   // -o-transition: opacity 1s ease-in-out;
   // transition: opacity 1s ease-in-out;
 
-  // @media screen and (min-width: $tablet) {
-  //   bottom: 100px;
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   bottom: 140px;
-  // }
+  @media screen and (min-width: $tablet) {
+    bottom: 100px;
+    border-radius: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 140px;
+    border-radius: 24px;
+  }
 }
 
 // #cf img.top:hover {
@@ -124,6 +127,10 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 0px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: url(../images/cursor.png), auto;
 }
 // slider info
 
