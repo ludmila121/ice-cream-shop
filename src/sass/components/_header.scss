@@ -1,18 +1,80 @@
 .header {
-  position: relative;
-  min-width: 320px;
-  height: 502px;
-  background-size: cover;
-  background-image: url(../images/header/hero-fill.jpg);
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
 
   &__logo-img {
-    margin-top: 12px;
-    margin-left: 20px;
+    width: 40px;
+    height: 37px;
+    @media screen and (min-width: $tablet) {
+      width: 48px;
+      height: 44px;
+    }
+    @media screen and(min-width: $desktop) {
+      width: 60px;
+      height: 65px;
+    }
+  }
+}
+.site-nav {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 20px;
+  }
+}
+.header__btn {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  padding: 12px 35px 12px 36px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 12);
+  border: none;
+  transition: background-color 250ms ease-in-out;
+  color: var(--btn-txt-cl);
+  background: var(--btn-cl);
+  border-radius: 10px;
+  &:hover {
+    color: #000000;
+    background-color: var(--btn-hover-cl);
+  }
+  &:focus {
+    color: var(--btn-txt-focus-cl);
+    background-color: var(--btn-hover-cl);
+  }
+  &:disabled {
+    color: var(--btn-txt-cl);
+    border-color: var(--btn-disabled-cl);
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.nav-menu {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  &__item {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    transition: color 250ms ease-in-out;
+    color: var(--modal-bg-cl);
+  }
+  &__item:not(:last-child) {
+    margin-right: 32px;
+  }
+  &__item:hover {
+    color: var(--btn-cl);
   }
 }

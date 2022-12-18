@@ -1,0 +1,181 @@
+// GALLERY GENERAL STYLES
+
+.gallery {
+  @include section(178px, 40px);
+
+  // @media screen and (min-width: $tablet) {
+  //   @include section(283px, 40px);
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   @include section(464px, 40px);
+  // }
+}
+
+// ------- ANIMATION SLIDER
+
+.cf {
+  border-radius: 10px;
+  // box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  //   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Adds animation when hovering. */
+// .cf {
+//   animation-name: changeBgColor;
+//   animation-duration: 3000ms;
+// }
+
+// @keyframes changeBgColor {
+//   0% {
+//     opacity: 1;
+//   }
+
+//   50% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 0;
+//   }
+// }
+.cf {
+  position: relative;
+  margin: 0 auto;
+}
+
+// #cf img
+.gallery-image {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  // border-radius: 8px;
+  // -webkit-transition: opacity 1s ease-in-out;
+  // -moz-transition: opacity 1s ease-in-out;
+  // -o-transition: opacity 1s ease-in-out;
+  // transition: opacity 1s ease-in-out;
+
+  // @media screen and (min-width: $tablet) {
+  //   bottom: 100px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   bottom: 140px;
+  // }
+}
+
+// #cf img.top:hover {
+//   opacity: 0;
+// }
+// @keyframes cf4FadeInOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   17% {
+//     opacity: 1;
+//   }
+//   25% {
+//     opacity: 0;
+//   }
+//   92% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// #cf img:nth-of-type(1) {
+//   animation-delay: 6s;
+// }
+// #cf img:nth-of-type(2) {
+//   animation-delay: 4s;
+// }
+// #cf img:nth-of-type(3) {
+//   animation-delay: 2s;
+// }
+// #cf img:nth-of-type(4) {
+//   animation-delay: 0;
+// }
+
+// -------------- SLIDER
+
+.swiper {
+  width: 100%;
+  // height: 300px;
+  // background-color: var(--slider-cl);
+  @media screen and (min-width: $desktop) {
+    max-width: 968px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--slider-cl);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  color: var(--slider-sec-cl);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+}
+// slider info
+
+.reviewer-photo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+.review {
+  text-align: center;
+  margin-bottom: 32px;
+  @include section(35px, 35px);
+
+  padding-left: 39px;
+  padding-right: 39px;
+
+  background-color: var(--slider-cl);
+  border-radius: 10px;
+
+  @include fonts(12px, 31px, 400, 0.02em);
+
+  @media screen and (min-width: $tablet) {
+    @include section(28px, 28px);
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    border-radius: 24px;
+
+    @include fonts(14px, 26px, 500, 0.04em);
+  }
+  @media screen and (min-width: $desktop) {
+    @include section(43px, 43px);
+
+    padding-left: 109px;
+    padding-right: 109px;
+
+    @include fonts(16px, 30px, 500, 0.04em);
+  }
+}
+
+.reviewer {
+  color: var(--accent-txt-cl);
+  text-align: center;
+  margin-bottom: 32px;
+  @include fonts(20px, 37px, 500, 0.02em);
+
+  @media screen and (min-width: $tablet) {
+    @include fonts(16px, 30px, 500, 0.02em);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include fonts(16px, 30px, 500, 0.02em);
+  }
+}
