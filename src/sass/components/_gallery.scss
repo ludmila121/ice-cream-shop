@@ -1,54 +1,100 @@
 // GALLERY GENERAL STYLES
 
 .gallery {
-  @include section(50px, 40px);
+  @include section(178px, 40px);
+
+  // @media screen and (min-width: $tablet) {
+  //   @include section(283px, 40px);
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   @include section(464px, 40px);
+  // }
 }
 
 // ------- ANIMATION SLIDER
-// .gallery-container {
-//   position: relative;
+
+.cf {
+  border-radius: 10px;
+  // box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  //   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Adds animation when hovering. */
+// .cf {
+//   animation-name: changeBgColor;
+//   animation-duration: 3000ms;
 // }
-#cf {
+
+// @keyframes changeBgColor {
+//   0% {
+//     opacity: 1;
+//   }
+
+//   50% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 0;
+//   }
+// }
+.cf {
   position: relative;
-  height: 281px;
   margin: 0 auto;
 }
 
-#cf img {
+// #cf img
+.gallery-image {
   position: absolute;
+  bottom: 80px;
   left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  // border-radius: 8px;
+  // -webkit-transition: opacity 1s ease-in-out;
+  // -moz-transition: opacity 1s ease-in-out;
+  // -o-transition: opacity 1s ease-in-out;
+  // transition: opacity 1s ease-in-out;
+
+  // @media screen and (min-width: $tablet) {
+  //   bottom: 100px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   bottom: 140px;
+  // }
 }
 
 // #cf img.top:hover {
 //   opacity: 0;
 // }
+// @keyframes cf4FadeInOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   17% {
+//     opacity: 1;
+//   }
+//   25% {
+//     opacity: 0;
+//   }
+//   92% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-@keyframes cf3FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#cf3 img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
-}
+// #cf img:nth-of-type(1) {
+//   animation-delay: 6s;
+// }
+// #cf img:nth-of-type(2) {
+//   animation-delay: 4s;
+// }
+// #cf img:nth-of-type(3) {
+//   animation-delay: 2s;
+// }
+// #cf img:nth-of-type(4) {
+//   animation-delay: 0;
+// }
 
 // -------------- SLIDER
 
