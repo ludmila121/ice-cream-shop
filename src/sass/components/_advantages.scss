@@ -64,7 +64,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     top: -160%;
-    left: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   &--weight::before {
@@ -77,7 +78,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     top: -160%;
-    left: 22%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   &--icecream::before {
@@ -90,7 +92,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     top: -160%;
-    left: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   @media screen and (min-width: $tablet) {
@@ -99,17 +102,14 @@
 
     &--cow::before {
       top: -120%;
-      left: 25%;
     }
 
     &--weight::before {
       top: -120%;
-      left: 30%;
     }
 
     &--icecream::before {
       top: -120%;
-      left: 15%;
     }
   }
 
@@ -118,17 +118,14 @@
 
     &--cow::before {
       top: -100%;
-      left: 25%;
     }
 
     &--weight::before {
       top: -100%;
-      left: 33%;
     }
 
     &--icecream::before {
       top: -100%;
-      left: 21%;
     }
   }
 }
