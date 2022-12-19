@@ -4,11 +4,12 @@
 }
 
 .about__subtitle {
-  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include fonts(18px, 22px, 700);
   text-transform: uppercase;
-  text-align: center;
 
   @media screen and (min-width: $tablet) {
     @include fonts(22px, 27px, 800, 0.04em);
@@ -20,7 +21,7 @@
 }
 
 .about__title {
-  margin: 0 auto 54px;
+  margin: 12px auto 54px;
 
   @include fonts(30px, 38px, 400, 0.04em);
   font-family: var(--secondary-font);
@@ -31,13 +32,13 @@
   @media screen and (min-width: $tablet) {
     @include fonts(34px, 43px, 400, 0.06em);
     width: 456px;
-    margin: 0 auto 98px;
+    margin: 12px auto 98px;
   }
 
   @media screen and (min-width: $desktop) {
     @include fonts(36px, 45px, 400, 0.06em);
     width: 483px;
-    margin: 0 auto 84px;
+    margin: 12px auto 84px;
   }
 }
 
@@ -105,8 +106,13 @@
   }
 
   @media screen and (min-width: $desktop) {
-    @include fonts(16px, 28px, 400, 0.04em);
+    @include fonts(14px, 27px, 400, 0.04em);
     max-width: 463px;
+
+    &:nth-child(1) {
+      @include fonts(16px, 28px, 400, 0.04em);
+      max-width: 463px;
+    }
   }
 }
 
@@ -125,7 +131,18 @@
   background: #f8d24e;
   border-radius: 10px;
 
-  cursor: pointer;
+  &:hover {
+    background: var(--btn-hover-cl);
+  }
+
+  &:focus {
+    background: var(--btn-hover-cl);
+    color: var(--btn-txt-focus-cl);
+  }
+
+  &:disabled {
+    color: var(--btn-disabled-cl);
+  }
 
   @media screen and (min-width: $tablet) {
     margin: 32px 0 0;
@@ -135,4 +152,8 @@
     align-items: left;
     margin: 54px 0 0;
   }
+}
+
+.about__button-icon {
+  fill: currentColor;
 }

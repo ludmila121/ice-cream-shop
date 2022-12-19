@@ -48,17 +48,88 @@
 }
 
 .advantages__info {
+  position: relative;
+  margin-top: 70px;
   margin-bottom: 16px;
 
   @include fonts(36px, 44px, 700, 0.04em);
 
+  &--cow::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/cow-advantage-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -160%;
+    left: 10%;
+  }
+
+  &--weight::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/weight-advantage-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -160%;
+    left: 22%;
+  }
+
+  &--icecream::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/ice-advantage-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -160%;
+    left: 0%;
+  }
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 12px;
     @include fonts(48px, 58px, 700, 0.04em);
+
+    &--cow::before {
+      top: -120%;
+      left: 25%;
+    }
+
+    &--weight::before {
+      top: -120%;
+      left: 30%;
+    }
+
+    &--icecream::before {
+      top: -120%;
+      left: 15%;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     @include fonts(58px, 70px, 700, 0.04em);
+
+    &--cow::before {
+      top: -100%;
+      left: 25%;
+    }
+
+    &--weight::before {
+      top: -100%;
+      left: 33%;
+    }
+
+    &--icecream::before {
+      top: -100%;
+      left: 21%;
+    }
   }
 }
 
