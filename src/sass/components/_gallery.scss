@@ -38,6 +38,29 @@
     border-radius: 24px;
   }
 }
+
+/* Adds animation when hovering. */
+.cf:hover {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+}
+
+@keyframes changeBgColor {
+  0% {
+    opacity: 0;
+    background-color: teal;
+  }
+
+  50% {
+    opacity: 0;
+    background-color: orange;
+  }
+
+  100% {
+    opacity: 0;
+    background-color: deepskyblue;
+  }
+}
 // -------------- SLIDER
 
 .swiper {
