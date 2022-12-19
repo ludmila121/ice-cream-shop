@@ -111,13 +111,15 @@
   height: 32px;
   background-color: var(--btn-cl);
   border-radius: 50%;
-  fill: #84a178;
+  fill: var(--icon-cl);
 }
 .socials__link:hover,
 .socials__link:focus {
-  color: #fcfcfc;
-  // color: var(--main-txt-cl);
+  fill: #fcfcfc;
 }
+// .socials__icon {
+//   fill: currentColor;
+// }
 
 .contact-box {
   display: flex;
@@ -160,12 +162,12 @@
   }
 }
 
-.footer-copiright {
+.footer-copyright {
   border-top: 1px solid #e1e1e1;
   width: 100%;
 }
 
-.footer-copiright__text {
+.footer-copyright__text {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
