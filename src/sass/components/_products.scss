@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  font-family: var(--main-font);
   font-style: normal;
   color: var(--accent-txt-cl);
 
@@ -56,8 +57,8 @@
     }
   }
 
-  &__title {
-    font-family: 'Seymour One';
+  .products__title {
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
@@ -96,13 +97,13 @@
 
   .menu {
     .ice-cream {
-      background-color: #aec6a5;
+      background-color: var(--bg-cl-1);
     }
     .ice-coffee {
-      background-color: #efd478;
+      background-color: var(--bg-cl-2);
     }
     .milkshakes {
-      background-color: #d6936d;
+      background-color: var(--bg-cl-3);
     }
 
     // TABLET-DESKTOP
@@ -505,6 +506,8 @@
       align-items: center;
       background-color: transparent;
 
+      transition: fill 250ms ease-in-out;
+
       // MOBILE
 
       @include mq(tablet, max) {
@@ -521,6 +524,11 @@
 
       @media screen and (min-width: $desktop) {
         bottom: 60px;
+      }
+
+      &:hover,
+      &:focus {
+        fill: var(--btn-txt-focus-cl);
       }
     }
   }
