@@ -112,14 +112,15 @@
   height: 32px;
   background-color: var(--btn-cl);
   border-radius: 50%;
+  fill: var(--icon-cl);
 }
 .socials__link:hover,
 .socials__link:focus {
   fill: #fcfcfc;
 }
-.socials__icon {
-  fill: currentColor;
-}
+// .socials__icon {
+//   fill: currentColor;
+// }
 
 .contact-box {
   display: flex;
@@ -162,7 +163,7 @@
   }
 }
 
-.footer-copiright {
+.footer-copyright {
   border-top: 1px solid #e1e1e1;
   width: 100%;
   align-items: center;
@@ -171,7 +172,6 @@
 }
 
 .footer-copyright__text {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

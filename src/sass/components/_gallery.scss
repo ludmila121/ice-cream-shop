@@ -1,107 +1,62 @@
 // GALLERY GENERAL STYLES
-
-.gallery {
-  @include section(178px, 40px);
-
-  // @media screen and (min-width: $tablet) {
-  //   @include section(283px, 40px);
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   @include section(464px, 40px);
-  // }
-}
-
-// ------- ANIMATION SLIDER
-
-.cf {
-  border-radius: 10px;
-  // box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-  //   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-
-/* Adds animation when hovering. */
-// .cf {
-//   animation-name: changeBgColor;
-//   animation-duration: 3000ms;
-// }
-
-// @keyframes changeBgColor {
-//   0% {
-//     opacity: 1;
-//   }
-
-//   50% {
-//     opacity: 0;
-//   }
-
-//   100% {
-//     opacity: 0;
-//   }
-// }
 .cf {
   position: relative;
-  margin: 0 auto;
 }
+.gallery {
+  // 178px
+  @include section(0px, 40px);
+  background-image: linear-gradient(to bottom, var(--icon-cl) 5%, #fff0 5% 100%);
 
-// #cf img
+  // 283px
+  @media screen and (min-width: $tablet) {
+    @include section(0px, 80px);
+    background-image: linear-gradient(to bottom, var(--icon-cl) 18%, #fff0 18% 100%);
+  }
+  // 464px
+  @media screen and (min-width: $desktop) {
+    @include section(0px, 100px);
+    background-image: linear-gradient(to bottom, var(--icon-cl) 11%, #fff0 11% 100%);
+  }
+}
+.gallery-container {
+  @media screen and (min-width: $desktop) {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
+}
+// ------- ANIMATION SLIDER
 .gallery-image {
   position: absolute;
-  bottom: 80px;
+  top: 0;
   left: 0;
-  // border-radius: 8px;
-  // -webkit-transition: opacity 1s ease-in-out;
-  // -moz-transition: opacity 1s ease-in-out;
-  // -o-transition: opacity 1s ease-in-out;
-  // transition: opacity 1s ease-in-out;
+  border-radius: 8px;
 
-  // @media screen and (min-width: $tablet) {
-  //   bottom: 100px;
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   bottom: 140px;
-  // }
+  @media screen and (min-width: $tablet) {
+    border-radius: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    border-radius: 24px;
+  }
 }
-
-// #cf img.top:hover {
-//   opacity: 0;
-// }
-// @keyframes cf4FadeInOut {
-//   0% {
-//     opacity: 1;
-//   }
-//   17% {
-//     opacity: 1;
-//   }
-//   25% {
-//     opacity: 0;
-//   }
-//   92% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
-// #cf img:nth-of-type(1) {
-//   animation-delay: 6s;
-// }
-// #cf img:nth-of-type(2) {
-//   animation-delay: 4s;
-// }
-// #cf img:nth-of-type(3) {
-//   animation-delay: 2s;
-// }
-// #cf img:nth-of-type(4) {
-//   animation-delay: 0;
-// }
-
 // -------------- SLIDER
 
 .swiper {
   width: 100%;
+  padding-top: 210px;
+
+  // margin-top: 80px;
   // height: 300px;
   // background-color: var(--slider-cl);
+  @media screen and (min-width: $tablet) {
+    // margin-top: 100px;
+    padding-top: 427px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 968px;
+    // margin-top: 140px;
+    padding-top: 562px;
+  }
 }
 .swiper-pagination-bullet-active {
   background-color: var(--slider-cl);
@@ -121,6 +76,10 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 0px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: url(../images/cursor.png), auto;
 }
 // slider info
 
