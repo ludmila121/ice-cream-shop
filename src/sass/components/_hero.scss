@@ -59,6 +59,8 @@
   text-align: center;
   border: 2px solid var(--btn-cl);
   border-radius: 8px;
+  text-decoration: none;
+
   background-color: var(--icon-cl);
   transition: border-color 250ms ease-in-out;
   color: var(--btn-txt-cl);
@@ -116,6 +118,16 @@
     bottom: 0;
     left: 652px;
   }
+}
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.slideOutLeft {
+  animation-name: slideOutLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .hero2 {
   display: none;
