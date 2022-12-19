@@ -119,6 +119,16 @@
     left: 652px;
   }
 }
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.slideOutLeft {
+  animation-name: slideOutLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
 .hero2 {
   display: none;
   position: absolute;
