@@ -97,6 +97,8 @@ a.js-open-modal {
 // }
 
 .franchies-modal {
+  height: 100vh;
+
   @media screen and (min-width: 768px) {
     min-width: 568px;
     // min-height: 668px;
@@ -241,6 +243,8 @@ a.js-open-modal {
 
 // MAIIA / Modal 2 INGREDIENTS modal
 .modal-ingredients {
+  height: 100vh;
+
   @include section(26px, 26px);
   padding-left: 26px;
   padding-right: 26px;
@@ -422,6 +426,8 @@ a.js-open-modal {
 // PRODUCT MODAL
 
 .product-modal {
+  height: 100vh;
+
   overflow: scroll;
 
   @media screen and (min-width: 768px) {
