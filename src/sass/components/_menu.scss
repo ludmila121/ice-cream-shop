@@ -20,7 +20,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 5;
+  // z-index: 5;
+  z-index: 4;
   background-color: var(--menu-bg-cl);
   transform: translateX(105%);
   transition: transform 250ms ease-in-out;
