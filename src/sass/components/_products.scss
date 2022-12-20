@@ -8,25 +8,6 @@
 
   // MOBILE
 
-  // @media screen and (max-width: 767px)  {
-  //     padding-left: 20px;
-  //     padding-right: 20px;
-  // }
-
-  // //TABLET
-
-  // @media screen and (min-width: $tablet) and (max-width: 1199px)  {
-  //     padding-left: 32px;
-  //     padding-right: 32px;
-  // }
-
-  // //DESKTOP
-
-  // @media screen and (min-width: $desktop)  {
-  //     padding-left: 16px;
-  //     padding-right: 16px;
-  // }
-
   &__label {
     margin-bottom: 12px;
 
@@ -182,17 +163,6 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-
-      //     // MOBILE
-
-      //     @media screen and (max-width: 479px)  {
-      //         min-width: 200px;
-      //         min-height: 200px;
-
-      //         left: 50%;
-      //         margin-top: - 97px;
-      //         transform: translateX(- 50%);
-      // }
 
       // MOBILE-TABLET
 
