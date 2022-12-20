@@ -40,27 +40,64 @@
 }
 
 /* Adds animation when hovering. */
-.cf:hover {
-  animation-name: changeBgColor;
-  animation-duration: 3000ms;
+.img-first {
+  animation-name: imgfirstshow;
+  animation-duration: 6000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
-@keyframes changeBgColor {
+@keyframes imgfirstshow {
   0% {
-    opacity: 0;
-    background-color: teal;
+    opacity: 1;
   }
-
   50% {
     opacity: 0;
-    background-color: orange;
   }
-
   100% {
     opacity: 0;
-    background-color: deepskyblue;
   }
 }
+.img-second {
+  animation-name: imgsecondshow;
+  animation-duration: 6000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes imgsecondshow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.img-third {
+  animation-name: imgthirdshow;
+  animation-duration: 6000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes imgthirdshow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 // -------------- SLIDER
 
 .swiper {
