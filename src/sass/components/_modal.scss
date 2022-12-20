@@ -99,19 +99,19 @@ a.js-open-modal {
 .franchies-modal {
   @media screen and (min-width: 768px) {
     min-width: 568px;
-    min-height: 668px;
+    // min-height: 668px;
     padding: 30px 60px;
   }
   @media screen and (min-width: 480px) {
     width: 280px;
-    height: 674px;
+    // height: 674px;
     // position: absolute;
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%) scale(1);
   }
-  background-color: white;
-  border: 2px solid #f8d24e;
+  // background-color: white;
+  // border: 2px solid #f8d24e;
   padding: 29px 30px;
 }
 
@@ -245,11 +245,18 @@ a.js-open-modal {
   background-color: var(--modal-bg-cl);
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  overflow-y: scroll;
 }
 .modal-location {
   @include section(28px, 28px);
   padding-left: 28px;
   padding-right: 28px;
+
+  max-width: 280px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 568px;
+  }
 
   @media screen and (min-width: $desktop) {
     @include section(32px, 32px);
@@ -313,13 +320,15 @@ a.js-open-modal {
 // PRODUCT MODAL
 
 .product-modal {
+  overflow: scroll;
+
   @media screen and (min-width: 768px) {
     min-width: 568px;
-    min-height: 644px;
+    // min-height: 644px;
     padding: 32px 54px;
   }
   @media screen and (max-width: 767px) {
-    height: 991px;
+    // height: 991px;
   }
   @media screen and (min-width: 480px) {
     width: 280px;
@@ -328,9 +337,9 @@ a.js-open-modal {
     // left: 50%;
     // transform: translate(-50%, -50%) scale(1);
   }
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
+  // background: #fcfcfc;
+  // border: 2px solid #f8d24e;
+  // border-radius: 10px;
   padding: 26px;
 }
 
