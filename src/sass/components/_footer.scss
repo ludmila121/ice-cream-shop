@@ -14,9 +14,10 @@
 }
 
 .footer-page__container {
-  border-bottom: 1px solid #e1e1e1;
+  @include mq(desktop) {
+    border-bottom: 1px solid #e1e1e1;
+  }
 }
-
 .footer-page__title {
   // margin-bottom: 60px;
   width: 234px;
@@ -168,15 +169,15 @@
 }
 
 .footer-copyright {
-  @include mq(tablet) {
-    border-bottom: 1px solid #e1e1e1;
+  @media screen and (max-width: 1199px) {
+    border-top: 1px solid #e1e1e1;
+    width: 100%;
   }
-  width: 100%;
 }
 
 .footer-copyright__text {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(21 / 14);
   color: #7a7a7a;
@@ -188,17 +189,17 @@
   padding-top: 20px;
 
   @include mq(tablet) {
-    font-weight: 500;
+    font-weight: 700;
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 14px;
-    line-height: calc(22 / 12);
+    line-height: calc(26 / 14);
     letter-spacing: 0.02em;
   }
   @include mq(desktop) {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(30 / 16);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(22 / 12);
     letter-spacing: 0.02em;
     padding-top: 12px;
     padding-bottom: 12px;
