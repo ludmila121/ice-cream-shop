@@ -53,12 +53,36 @@
       ></path>
     </svg>
     <h2 class="modal-ingredients__title">Chololate icecream</h2>
-    <h3>Ingredients</h3>
-    <img
-      class="modal-ingredients__image"
-      src="./images/modal/info-prod-desk@1x.png"
-      alt="Icecream in hand"
-    />
+
+    <div class="circle">
+      <!-- <img
+        class="modal-ingredients__image"
+        src="./images/modal/info-prod-desk@1x.png"
+        alt="Icecream in hand"
+        width="132"
+        height="132"
+      /> -->
+      <picture class="modal-ingredients__image">
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/modal/info-prod-desk@1x.png 1x, ./images/modal/info-prod-desk@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="./images/modal/info-prod-mob@1x.png 2x 1x, 
+          ./images/modal/info-prod-mob@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          src="./images/modal/info-prod-mob@1x.png"
+          alt="Icecream image"
+          width="132"
+          height="132"
+        />
+      </picture>
+    </div>
+
     <ul class="list">
       <li class="list-kcal list-ingredients"><span>320</span>kcal</li>
       <li class="list-kcal list-ingredients"><span>4g</span>Protein...</li>
@@ -66,6 +90,7 @@
       <li class="list-kcal list-ingredients"><span> 40,4g </span> Carbs</li>
     </ul>
 
+    <h3 class="modal-ingredients__subtitle">Ingredients</h3>
     <ul class="list">
       <li class="list-ingredients"><span>Milk</span>100ml</li>
       <li class="list-ingredients"><span>Belgian chocolate</span>20g</li>
