@@ -6,14 +6,15 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @include mq(tablet) {
+  @include mq(desktop) {
+    padding-top: 120px;
     display: flex;
     justify-content: space-between;
   }
-  @include mq(desktop) {
-    padding-top: 120px;
-    //
-  }
+}
+
+.footer-page__container {
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .footer-page__title {
@@ -54,6 +55,7 @@
     line-height: calc(37 / 30);
     letter-spacing: 0.04;
     margin-bottom: 14px;
+    justify-content: baseline;
   }
 }
 
@@ -136,6 +138,7 @@
   justify-content: center;
   text-align: center;
   margin-bottom: 20px;
+  margin-right: 4px;
 
   @include mq(tablet) {
     font-size: 14px;
@@ -148,6 +151,7 @@
 }
 
 .contact-box__number {
+  font-weight: 700;
   color: var(--btn-txt-focus-cl);
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -164,11 +168,10 @@
 }
 
 .footer-copyright {
-  border-top: 1px solid #e1e1e1;
+  @include mq(tablet) {
+    border-bottom: 1px solid #e1e1e1;
+  }
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .footer-copyright__text {
@@ -177,21 +180,20 @@
   font-size: 14px;
   line-height: calc(21 / 14);
   color: #7a7a7a;
-  width: 150px;
+  // max-width: 150px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 
   @include mq(tablet) {
     font-weight: 500;
-    padding-top: 14px;
+    padding-top: 12px;
     padding-bottom: 12px;
     font-size: 14px;
     line-height: calc(22 / 12);
     letter-spacing: 0.02em;
-    width: 300px;
   }
   @include mq(desktop) {
     font-weight: 500;
