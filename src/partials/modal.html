@@ -45,38 +45,48 @@
     </div>
   </div>
 
-  <!-- Franchies Modal -->
-  <div class="franchies-modal modal" data-modal="2">
+  <div class="modal-ingredients modal" data-modal="5">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
       <path
         d="M17.253 16l7.369-7.369c0.131-0.154 0.21-0.355 0.21-0.574 0-0.491-0.398-0.889-0.889-0.889-0.22 0-0.42 0.080-0.576 0.211l0.001-0.001-7.369 7.369-7.369-7.377c-0.164-0.18-0.399-0.292-0.661-0.292-0.493 0-0.893 0.4-0.893 0.893 0 0.261 0.112 0.496 0.291 0.659l0.001 0.001 7.379 7.369-7.379 7.369c-0.193 0.164-0.315 0.407-0.315 0.679 0 0.491 0.398 0.889 0.889 0.889 0.272 0 0.515-0.122 0.678-0.314l0.001-0.001 7.379-7.369 7.368 7.369c0.154 0.131 0.355 0.21 0.574 0.21 0.491 0 0.889-0.398 0.889-0.889 0-0.22-0.080-0.42-0.211-0.576l0.001 0.001-7.368-7.369z"
       ></path>
     </svg>
-    <h2 class="franchise__title form-title">
-      Thank you for your interest in owning an Ice Cream shop
-    </h2>
-    <p class="modal__text">
-      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-      applications at this time. Once the application process resumes, we will contact you for
-      further information. Please fill out the contact information below and we will reach out for
-      additional information. We appreciate your patience.
-    </p>
+    <h2 class="modal-ingredients__title">Chololate icecream</h2>
+    <h3>Ingredients</h3>
+    <img
+      class="modal-ingredients__image"
+      src="./images/modal/info-prod-desk@1x.png"
+      alt="Icecream in hand"
+    />
+    <ul class="list">
+      <li class="list-kcal list-ingredients"><span>320</span>kcal</li>
+      <li class="list-kcal list-ingredients"><span>4g</span>Protein...</li>
+      <li class="list-kcal list-ingredients"><span>8,2g </span>Fats</li>
+      <li class="list-kcal list-ingredients"><span> 40,4g </span> Carbs</li>
+    </ul>
+
+    <ul class="list">
+      <li class="list-ingredients"><span>Milk</span>100ml</li>
+      <li class="list-ingredients"><span>Belgian chocolate</span>20g</li>
+      <li class="list-ingredients"><span>Cream</span>150 ml</li>
+      <li class="list-ingredients"><span>Cocoa powder</span> 30g</li>
+      <li class="list-ingredients"><span>Sugar</span>40g</li>
+      <li class="list-ingredients"><span>Vanilla sugar</span>10g</li>
+    </ul>
+
     <form>
-      <ul class="list">
+      <ul class="list franchise-list">
         <li>
-          <input class="franchise-list__input modal__input" type="text" placeholder="Name" />
+          <input class="franchise-list__input" type="text" placeholder="Name" />
         </li>
         <li>
-          <input class="franchise-list__input modal__input" type="tel" placeholder="Phone" />
-        </li>
-        <li>
-          <input class="franchise-list__input modal__input" type="email" placeholder="Email" />
+          <input class="franchise-list__input" type="tel" placeholder="Phone" />
         </li>
       </ul>
 
-      <textarea class="franchise-list__comment form__textarea" placeholder="Comment"></textarea>
-      <button class="franchise__btn form__btn" type="submit">Submit</button>
+      <textarea class="product-list__comment" placeholder="Comment"></textarea>
+      <button class="franchise__btn" type="submit">Submit</button>
     </form>
   </div>
 
@@ -137,14 +147,39 @@
   </div>
   <!-- OUR LOCATIONS (MAP) MODAL END-->
 
-  <div class="modal" data-modal="5">
+  <!-- Franchies Modal -->
+  <div class="franchies-modal modal" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
       <path
         d="M17.253 16l7.369-7.369c0.131-0.154 0.21-0.355 0.21-0.574 0-0.491-0.398-0.889-0.889-0.889-0.22 0-0.42 0.080-0.576 0.211l0.001-0.001-7.369 7.369-7.369-7.377c-0.164-0.18-0.399-0.292-0.661-0.292-0.493 0-0.893 0.4-0.893 0.893 0 0.261 0.112 0.496 0.291 0.659l0.001 0.001 7.379 7.369-7.379 7.369c-0.193 0.164-0.315 0.407-0.315 0.679 0 0.491 0.398 0.889 0.889 0.889 0.272 0 0.515-0.122 0.678-0.314l0.001-0.001 7.379-7.369 7.368 7.369c0.154 0.131 0.355 0.21 0.574 0.21 0.491 0 0.889-0.398 0.889-0.889 0-0.22-0.080-0.42-0.211-0.576l0.001 0.001-7.368-7.369z"
       ></path>
     </svg>
-    <p class="modal__title">Modal 5</p>
+    <h2 class="franchise__title form-title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <p class="modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+      applications at this time. Once the application process resumes, we will contact you for
+      further information. Please fill out the contact information below and we will reach out for
+      additional information. We appreciate your patience.
+    </p>
+    <form>
+      <ul class="list">
+        <li>
+          <input class="franchise-list__input modal__input" type="text" placeholder="Name" />
+        </li>
+        <li>
+          <input class="franchise-list__input modal__input" type="tel" placeholder="Phone" />
+        </li>
+        <li>
+          <input class="franchise-list__input modal__input" type="email" placeholder="Email" />
+        </li>
+      </ul>
+
+      <textarea class="franchise-list__comment form__textarea" placeholder="Comment"></textarea>
+      <button class="franchise__btn form__btn" type="submit">Submit</button>
+    </form>
   </div>
 
   <!-- Подложка под модальным окном -->

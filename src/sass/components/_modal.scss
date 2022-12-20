@@ -238,7 +238,50 @@ a.js-open-modal {
   border-radius: 10px;
   border: none;
 }
+
+// MAIIA / Modal 2 INGREDIENTS modal
+.modal-ingredients {
+  @include section(26px, 26px);
+  padding-left: 26px;
+  padding-right: 26px;
+
+  max-width: 280px;
+  overflow: scroll;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 568px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include section(32px, 32px);
+
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+}
+.modal-ingredients__title {
+  font-family: var(--secondary-font);
+  @include fonts(16px, 24px, 400, 0.02em);
+
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-txt-cl);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 24px;
+    @include fonts(20px, 28px, 400, 0.02em);
+  }
+}
+.modal-ingredients__image {
+  align-items: center;
+}
+.list-ingredients {
+  color: var(--accent-txt-cl);
+}
 // MAIIA / Modal 3 VIDEO modal
+
 .modal-about {
   @include section(26px, 26px);
   padding-left: 26px;
