@@ -238,7 +238,66 @@ a.js-open-modal {
   border-radius: 10px;
   border: none;
 }
-// MAIIA / Modal 4
+// MAIIA / Modal 3 VIDEO modal
+.modal-about {
+  @include section(26px, 26px);
+  padding-left: 26px;
+  padding-right: 26px;
+
+  max-width: 280px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 568px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include section(32px, 32px);
+
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+}
+.modal-about__description {
+  @include fonts(14px, 20px, 400, 0.02em);
+  text-align: initial;
+  color: var(--accent-txt-cl);
+
+  @media screen and (min-width: $desktop) {
+    @include fonts(16px, 22px, 400, 0.02em);
+
+    max-width: 568px;
+  }
+}
+.modal-about__title {
+  font-family: var(--secondary-font);
+  @include fonts(16px, 24px, 400, 0.02em);
+
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-txt-cl);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+    @include fonts(20px, 28px, 400, 0.02em);
+  }
+}
+.modal-about_video {
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 28px;
+    width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+    height: 205px;
+  }
+}
+
+// MAIIA / Modal 4 MAP modal
 
 // в загальний клас добавити вище
 .modal {
@@ -248,9 +307,9 @@ a.js-open-modal {
   overflow-y: scroll;
 }
 .modal-location {
-  @include section(28px, 28px);
-  padding-left: 28px;
-  padding-right: 28px;
+  @include section(26px, 26px);
+  padding-left: 26px;
+  padding-right: 26px;
 
   max-width: 280px;
 
@@ -265,7 +324,7 @@ a.js-open-modal {
     padding-right: 60px;
   }
 }
-.modal-location-title {
+.modal-location__title {
   font-family: var(--secondary-font);
   @include fonts(16px, 24px, 400, 0.02em);
 
