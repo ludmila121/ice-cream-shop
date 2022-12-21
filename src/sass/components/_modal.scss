@@ -73,6 +73,9 @@ a.js-open-modal {
   color: #fff;
   border-radius: 3px;
 }
+textarea {
+  resize: none;
+}
 
 // .backdrop {
 //   @media screen and (max-width: 479px) {
@@ -97,6 +100,8 @@ a.js-open-modal {
 // }
 
 .franchies-modal {
+  height: 100vh;
+
   @media screen and (min-width: 768px) {
     min-width: 568px;
     // min-height: 668px;
@@ -246,7 +251,9 @@ a.js-open-modal {
   padding-right: 26px;
 
   max-width: 280px;
+
   overflow: scroll;
+  height: 100vh;
 
   @media screen and (min-width: $tablet) {
     max-width: 568px;
@@ -274,9 +281,41 @@ a.js-open-modal {
     @include fonts(20px, 28px, 400, 0.02em);
   }
 }
-.modal-ingredients__image {
-  align-items: center;
+.circle {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: rgba(156, 190, 143, 0.7);
+
+  // background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 24px;
+  }
 }
+.modal-ingredients__image {
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+}
+.modal-ingredients__subtitle {
+  @include fonts(20px, 28px, 500, 0.02em);
+
+  align-items: center;
+  text-align: center;
+
+  color: var(--accent-txt-cl);
+  margin-bottom: 24px;
+}
+
 .list-ingredients {
   color: var(--accent-txt-cl);
 }
@@ -422,6 +461,8 @@ a.js-open-modal {
 // PRODUCT MODAL
 
 .product-modal {
+  height: 100vh;
+
   overflow: scroll;
 
   @media screen and (min-width: 768px) {
