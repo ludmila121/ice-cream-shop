@@ -242,6 +242,18 @@ textarea {
   background-color: #f8d24e;
   border-radius: 10px;
   border: none;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+  &:hover {
+    background-color: var(--btn-hover-cl);
+  }
+  &:focus {
+    background-color: var(--btn-hover-cl);
+    color: var(--btn-txt-focus-cl);
+  }
+  &disabled {
+    background-color: var(--btn-disabled-cl);
+  }
 }
 
 // MAIIA / Modal 2 INGREDIENTS modal
@@ -474,6 +486,18 @@ textarea {
   @media screen and (min-width: $tablet) {
     width: 132px;
   }
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+  &:hover {
+    background-color: var(--btn-hover-cl);
+  }
+  &:focus {
+    background-color: var(--btn-hover-cl);
+    color: var(--btn-txt-focus-cl);
+  }
+  &disabled {
+    background-color: var(--btn-disabled-cl);
+  }
 }
 // MAIIA / Modal 3 VIDEO modal
 
@@ -610,6 +634,18 @@ textarea {
   @media screen and (min-width: $tablet) {
     width: 148px;
     @include fonts(14px, 17px, 600, 0.02em);
+  }
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+  &:hover {
+    background-color: var(--btn-hover-cl);
+  }
+  &:focus {
+    background-color: var(--btn-hover-cl);
+    color: var(--btn-txt-focus-cl);
+  }
+  &disabled {
+    background-color: var(--btn-disabled-cl);
   }
 }
 // Modal 4 end
@@ -879,25 +915,4 @@ textarea {
   font-size: 12px;
   line-height: calc(17 / 12);
   color: #131313;
-}
-
-.franchise__btn {
-  @media screen and (min-width: 768px) {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-  }
-  display: block;
-  margin: 0 auto;
-  padding: 12px 34px;
-
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(15 / 12);
-
-  color: #131313;
-  background-color: #f8d24e;
-  border-radius: 10px;
-  border: none;
 }
