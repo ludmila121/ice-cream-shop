@@ -187,6 +187,7 @@
 }
 .hero__icon-arrow {
   fill: var(--main-txt-cl);
+  transition: fill 250ms ease-in-out;
 }
 .hero__icon-arrow:hover,
 .hero__icon-arrow:focus {
