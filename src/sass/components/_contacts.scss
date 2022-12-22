@@ -220,6 +220,7 @@
     @media screen and (min-width: $tablet) {
       margin-right: 16px;
     }
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   }
   &_button-1:hover {
     background-color: var(--btn-hover-cl);
@@ -243,6 +244,7 @@
     border: 1px solid var(--btn-cl);
     padding-top: 12px;
     padding-bottom: 12px;
+    transition: border-color 250ms ease-in-out, color 250ms ease-in-out;
   }
   &_button-2:hover {
     border-color: var(--btn-hover-cl);

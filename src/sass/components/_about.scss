@@ -131,12 +131,14 @@
   background: #f8d24e;
   border-radius: 10px;
 
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
   &:hover {
-    background: var(--btn-hover-cl);
+    background-color: var(--btn-hover-cl);
   }
 
   &:focus {
-    background: var(--btn-hover-cl);
+    background-color: var(--btn-hover-cl);
     color: var(--btn-txt-focus-cl);
   }
 

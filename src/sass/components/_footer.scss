@@ -116,6 +116,8 @@
   background-color: var(--btn-cl);
   border-radius: 50%;
   fill: var(--icon-cl);
+
+  transition: fill 250ms ease-in-out;
 }
 .socials__link:hover,
 .socials__link:focus {
