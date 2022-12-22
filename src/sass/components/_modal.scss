@@ -699,6 +699,10 @@ textarea {
   transform: translate(-50%, -100%);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../images/modal/bynow1-mob@1x.png);
+  @media screen and (min-width: $desktop) {
+    // background-image: url(../images/modal/bynow1-desk@2x.png);
+  }
 }
 
 .products__ice-cream::after {
@@ -734,6 +738,10 @@ textarea {
 
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../images/modal/bynow2-mob@1x.png);
+  @media screen and (min-width: $desktop) {
+    // background-image: url(../images/modal/bynow1-desk@2x.png);
+  }
 }
 
 .products__ice-coffe::after {
@@ -769,6 +777,10 @@ textarea {
 
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../images/modal/bynow3-mob@1x.png);
+  @media screen and (min-width: $desktop) {
+    // background-image: url(../images/modal/bynow1-desk@2x.png);
+  }
 }
 
 .products__milkshake::after {
