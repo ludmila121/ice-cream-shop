@@ -1,37 +1,45 @@
-// .btn {
-//   position: relative;
-//   max-width: 250px;
-//   min-width: 160px;
-//   min-height: 40px;
-//   padding: 11px 19px;
+.btn-up {
+  /* фиксированное позиционирование */
+  position: fixed;
+  /* цвет фона */
+  background-color: var(--menu-bg-cl);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  /* расстояние от правого края окна браузера */
+  right: 20px;
+  /* расстояние от нижнего края окна браузера */
+  bottom: 0;
+  /* скругление верхнего левого угла */
+  border-top-left-radius: 8px;
+  /* скругление верхнего правого угла */
+  border-top-right-radius: 8px;
+  /* вид курсора */
+  /* отображение элемента как flex */
+  display: flex;
+  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+  align-items: center;
+  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+  justify-content: center;
+  /* ширина элемента */
+  width: 60px;
+  /* высота элемента */
+  height: 50px;
+}
 
-//   font-family: inherit;
-//   font-weight: 600;
-//   font-size: 12px;
-//   line-height: calc(16 / 12);
-//   letter-spacing: 0.09em;
-//   text-transform: uppercase;
-//   color: var(--main-txt-cl);
+.btn-up::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
 
-//   background-color: transparent;
-//   border: 1px solid var(--accent-bg-cl);
-//   border-radius: var(--btn-radius);
-//   overflow: hidden;
-//   cursor: pointer;
+.btn-up_hide {
+  display: none;
+}
 
-//   transition: color var(--trns-fast), background-color var(--trns-fast);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--light-txt-cl);
-//     background-color: var(--accent-bg-cl);
-//   }
-
-//   &--theme-dark {
-//     color: var(--light-txt-cl);
-//   }
-
-//   &--theme-light {
-//     color: var(--main-txt-cl-txt-cl);
-//   }
-// }
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: var(--btn-cl); /* цвет заднего фона при наведении */
+  }
+}
