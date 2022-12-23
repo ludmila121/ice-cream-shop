@@ -118,6 +118,10 @@ textarea {
   // background-color: white;
   // border: 2px solid #f8d24e;
   padding: 29px 30px;
+
+  @include mq(tablet) {
+    height: 678px;
+  }
 }
 
 .franchise__title {
@@ -270,6 +274,10 @@ textarea {
   @media screen and (min-width: $tablet) {
     padding: 32px 40px;
     max-width: 568px;
+  }
+
+  @include mq(tablet) {
+    max-height: 1002px;
   }
 }
 
@@ -654,8 +662,16 @@ textarea {
 
 .product-modal {
   height: 100vh;
-
+  padding: 26px;
   overflow: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%) scale(1);
+  }
 
   @media screen and (min-width: 768px) {
     min-width: 568px;
@@ -665,17 +681,13 @@ textarea {
   @media screen and (max-width: 767px) {
     // height: 991px;
   }
-  @media screen and (min-width: 480px) {
-    width: 280px;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%) scale(1);
+
+  @include mq(tablet) {
+    height: 664px;
   }
   // background: #fcfcfc;
   // border: 2px solid #f8d24e;
   // border-radius: 10px;
-  padding: 26px;
 }
 
 .product-modal__title {
