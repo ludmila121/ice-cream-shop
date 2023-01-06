@@ -19,20 +19,26 @@
     <div>
       <h2 class="product-modal__title">Buy now</h2>
       <ul class="list product-list">
-        <li class="products__item products__ice-cream">
-          <h3 class="products__title">ice cream</h3>
+        <li>
+          <button class="products__item products__ice-cream" type="button">
+            <h3 class="products__title">ice cream</h3>
+          </button>
         </li>
-        <li class="products__item products__ice-coffe">
-          <h3 class="products__title">ice coffee</h3>
+        <li>
+          <button class="products__item products__ice-coffe" type="button" autofocus>
+            <h3 class="products__title">ice coffee</h3>
+          </button>
         </li>
-        <li class="products__item products__milkshake">
-          <h3 class="products__title">milkshake</h3>
+        <li>
+          <button class="products__item products__milkshake" type="button">
+            <h3 class="products__title">milkshake</h3>
+          </button>
         </li>
       </ul>
       <form>
         <ul class="list franchise-list">
           <li>
-            <input class="franchise-list__input" type="text" placeholder="Name" />
+            <input class="franchise-list__input" type="text" placeholder="Name" autofocus />
           </li>
           <li>
             <input class="franchise-list__input" type="tel" placeholder="Phone" />
@@ -45,6 +51,7 @@
     </div>
   </div>
 
+  <!-- INGREDIENTS MODAL -->
   <div class="modal-ingredients modal" data-modal="5">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
@@ -126,7 +133,7 @@
     </form>
   </div>
 
-  <!-- frameborder="0" -->
+  <!-- ABOUT MODAL -->
   <div class="modal-about modal" data-modal="3">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
@@ -135,6 +142,7 @@
       ></path>
     </svg>
     <h2 class="modal-about__title">How it’s made?</h2>
+    <!-- frameborder="0" -->
     <iframe
       class="modal-about_video"
       width="224"
@@ -150,7 +158,7 @@
     </p>
   </div>
 
-  <!-- 4  OUR LOCATIONS (MAP) MODAL -->
+  <!-- OUR LOCATIONS (MAP) MODAL 4 -->
   <div class="modal-location modal" data-modal="4">
     <!--   Svg иконка для закрытия окна  -->
     <!-- <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -180,9 +188,8 @@
 
     <a class="modal-link link" href="https://goo.gl/maps/tnrnvPAMrcTUtLnd8">Open map</a>
   </div>
-  <!-- OUR LOCATIONS (MAP) MODAL END-->
 
-  <!-- Franchies Modal -->
+  <!-- FRANCHIES MODAL -->
   <div class="franchies-modal modal" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close" viewBox="0 0 32 32">
