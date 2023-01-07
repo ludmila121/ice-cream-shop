@@ -214,6 +214,13 @@ textarea {
   background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid var(--bg-cl);
+    outline: var(--bg-cl);
+  }
 }
 
 .franchise-list__comment::placeholder {
@@ -440,6 +447,13 @@ textarea {
   @media screen and (min-width: $tablet) {
     width: 368px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid var(--bg-cl);
+    outline: var(--bg-cl);
+  }
 }
 
 .modal-ingredients__input::placeholder {
@@ -463,6 +477,13 @@ textarea {
   @media screen and (min-width: $tablet) {
     width: 368px;
     margin-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid var(--bg-cl);
+    outline: var(--bg-cl);
   }
 }
 
@@ -716,7 +737,7 @@ textarea {
   padding: 96px 16px 20px 16px;
   display: block;
   margin: 0 auto;
-  border: 2px solid green;
+  border: 2px solid var(--btn-border);
 
   color: #131313;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
@@ -733,6 +754,15 @@ textarea {
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
+  }
+}
+
+.products__ice-cream {
+  &:hover,
+  &:focus {
+    background: var(--bg-cl-1);
+    border: transparent;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   }
 }
 
@@ -769,9 +799,16 @@ textarea {
 }
 
 .products__ice-coffe {
-  background: #efd478;
+  // background: #efd478;
   border: 2px solid #efd478;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    background: var(--bg-cl-2);
+    border: transparent;
+  }
 }
 
 .products__ice-coffe::before {
@@ -812,6 +849,14 @@ textarea {
 .products__milkshake {
   border: 2px solid #d6936d;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--bg-cl-3);
+    border: transparent;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  }
 }
 .products__milkshake::before {
   width: 132px;
@@ -881,6 +926,13 @@ textarea {
   background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid var(--bg-cl);
+    outline: var(--bg-cl);
+  }
 }
 
 .franchise-list__input::placeholder {
@@ -916,6 +968,13 @@ textarea {
   background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid var(--bg-cl);
+    outline: var(--bg-cl);
+  }
 }
 
 .product-list__comment::placeholder {
