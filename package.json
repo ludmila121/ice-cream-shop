@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/DmytroKarpenko88/icecream-masters/",
+  "homepage": "https://github.com/ludmila121/ice-cream-shop/"
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /icecream-masters/"
+    "build": "parcel build src/*.html --public-url /ice-cream-shop/"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
+  },git
   "dependencies": {
     "animate.css": "^4.1.1",
     "modern-normalize": "^1.1.0"
